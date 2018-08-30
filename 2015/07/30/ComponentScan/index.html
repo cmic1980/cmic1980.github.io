@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="乖乖象的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2015/07/index.html">
+<meta name="description" content="简单的说@ComponentScan主要作用指定一个或几个包，Spring在创建Bean容器后会自动扫描这些包下面的相关类并加载这些类到容器中。 指定扫描范围我们通过设置@ComponentScan的参数指定Spring扫描范围，比如下面的代码Spring只会在”pro.caifu365”包内扫描。1234567891011@ComponentScan(basePackages = &amp;#123;&quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="@ComponentScan详解">
+<meta property="og:url" content="http://yoursite.com/2015/07/30/ComponentScan/index.html">
 <meta property="og:site_name" content="乖乖象的博客">
+<meta property="og:description" content="简单的说@ComponentScan主要作用指定一个或几个包，Spring在创建Bean容器后会自动扫描这些包下面的相关类并加载这些类到容器中。 指定扫描范围我们通过设置@ComponentScan的参数指定Spring扫描范围，比如下面的代码Spring只会在”pro.caifu365”包内扫描。1234567891011@ComponentScan(basePackages = &amp;#123;&quot;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-08-30T07:59:15.167Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="乖乖象的博客">
+<meta name="twitter:title" content="@ComponentScan详解">
+<meta name="twitter:description" content="简单的说@ComponentScan主要作用指定一个或几个包，Spring在创建Bean容器后会自动扫描这些包下面的相关类并加载这些类到容器中。 指定扫描范围我们通过设置@ComponentScan的参数指定Spring扫描范围，比如下面的代码Spring只会在”pro.caifu365”包内扫描。1234567891011@ComponentScan(basePackages = &amp;#123;&quot;">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2015/07/"/>
+  <link rel="canonical" href="http://yoursite.com/2015/07/30/ComponentScan/"/>
 
 
 
 
 
-  <title>归档 | 乖乖象的博客</title>
+  <title>@ComponentScan详解 | 乖乖象的博客</title>
   
 
 
@@ -140,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,74 +248,128 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 1 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2015">2015</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/30/ComponentScan/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu Miao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="乖乖象的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2015/07/30/ComponentScan/" itemprop="url">
-              
-                <span itemprop="name">@ComponentScan详解</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">@ComponentScan详解</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-07-30T14:50:41+08:00"
-              content="2015-07-30" >
-          07-30
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-30T14:50:41+08:00">
+                2015-07-30
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>简单的说@ComponentScan主要作用指定一个或几个包，Spring在创建Bean容器后会自动扫描这些包下面的相关类并加载这些类到容器中。</p>
+<h3 id="指定扫描范围"><a href="#指定扫描范围" class="headerlink" title="指定扫描范围"></a>指定扫描范围</h3><p>我们通过设置@ComponentScan的参数指定Spring扫描范围，比如下面的代码Spring只会在”pro.caifu365”包内扫描。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ComponentScan</span>(basePackages = &#123;<span class="string">"pro.caifu365"</span>&#125;)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Application</span> <span class="keyword">implements</span> <span class="title">CommandLineRunner</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(Application.class, args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">(String... args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>大多时候@ComponentScan注解并不需要设置参数，那么这时的扫描范围则是@ComponentScan注解类同包或者其子包。</p>
+<h3 id="Component注释"><a href="#Component注释" class="headerlink" title="@Component注释"></a>@Component注释</h3><p>并不是所有在被扫描的包中所有类都会被加入到Spring的Bean容器，只有被@Component注释的类才会被加载到Bean容器中。<br>Spring中经常使用的@Controller，@Service，@Repository，@Configuration类都是@Component子类，所有使用这些注释的类会被加载到Bean容器中。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
 
       
 
-    </div>
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -319,6 +377,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -339,8 +401,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -382,6 +453,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#指定扫描范围"><span class="nav-number">1.</span> <span class="nav-text">指定扫描范围</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Component注释"><span class="nav-number">2.</span> <span class="nav-text">@Component注释</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -515,6 +602,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
