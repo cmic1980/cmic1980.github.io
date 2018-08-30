@@ -50,19 +50,19 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.6" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.6">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.6">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.6">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.6" color="#222">
 
 
 
@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="乖乖象的博客">
 <meta property="og:description" content="简单的说@ComponentScan主要作用指定一个或几个包，Spring在创建Bean容器后会自动扫描这些包下面的相关类并加载这些类到容器中。 指定扫描范围我们通过设置@ComponentScan的参数指定Spring扫描范围，比如下面的代码Spring只会在”pro.caifu365”包内扫描。1234567891011@ComponentScan(basePackages = &amp;#123;&quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-30T07:59:15.167Z">
+<meta property="og:updated_time" content="2018-08-30T08:04:06.695Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="@ComponentScan详解">
 <meta name="twitter:description" content="简单的说@ComponentScan主要作用指定一个或几个包，Spring在创建Bean容器后会自动扫描这些包下面的相关类并加载这些类到容器中。 指定扫描范围我们通过设置@ComponentScan的参数指定Spring扫描范围，比如下面的代码Spring只会在”pro.caifu365”包内扫描。1234567891011@ComponentScan(basePackages = &amp;#123;&quot;">
@@ -98,7 +98,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '5.1.4',
+    version: '5.1.6',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
@@ -220,12 +220,22 @@
         </li>
       
         
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            站点地图
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
           </a>
         </li>
       
@@ -332,7 +342,7 @@
         <p>简单的说@ComponentScan主要作用指定一个或几个包，Spring在创建Bean容器后会自动扫描这些包下面的相关类并加载这些类到容器中。</p>
 <h3 id="指定扫描范围"><a href="#指定扫描范围" class="headerlink" title="指定扫描范围"></a>指定扫描范围</h3><p>我们通过设置@ComponentScan的参数指定Spring扫描范围，比如下面的代码Spring只会在”pro.caifu365”包内扫描。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ComponentScan</span>(basePackages = &#123;<span class="string">"pro.caifu365"</span>&#125;)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Application</span> <span class="keyword">implements</span> <span class="title">CommandLineRunner</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(Application.class, args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">(String... args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>大多时候@ComponentScan注解并不需要设置参数，那么这时的扫描范围则是@ComponentScan注解类同包或者其子包。</p>
-<h3 id="Component注释"><a href="#Component注释" class="headerlink" title="@Component注释"></a>@Component注释</h3><p>并不是所有在被扫描的包中所有类都会被加入到Spring的Bean容器，只有被@Component注释的类才会被加载到Bean容器中。<br>Spring中经常使用的@Controller，@Service，@Repository，@Configuration类都是@Component子类，所有使用这些注释的类会被加载到Bean容器中。</p>
+<h3 id="Component注释"><a href="#Component注释" class="headerlink" title="@Component注释"></a>@Component注释</h3><p>并不是所有在被扫描的包中所有类都会被加入到Spring的Bean容器，只有被@Component注释的类才会被加载到Bean容器中。Spring中经常使用的@Controller，@Service，@Repository，@Configuration类都是@Component子类，所有使用这些注释的类会被加载到Bean容器中。</p>
 
       
     </div>
@@ -415,6 +425,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="Yu Miao" />
+            
               <p class="site-author-name" itemprop="name">Yu Miao</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -424,7 +438,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="/archives/">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
@@ -483,7 +497,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -501,7 +515,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div>
 
 
 
@@ -592,25 +606,25 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.6"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.6"></script>
 
 
 
   
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.6"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.6"></script>
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.6"></script>
 
 
 
